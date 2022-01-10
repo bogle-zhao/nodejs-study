@@ -45,6 +45,17 @@ webSocket.on('connection', (socket) => {
     socket.on('clientEvent', (data) => {
         console.log(JSON.stringify(data));
     });
+
+    // once:表示只响应一次，响应完后，这个监听器就会删除
+    // socket.once('clientEvent', (data) => {
+    //
+    // });
+
+    socket.on('broadcastEventClient', (message) => {
+        console.log(message);
+        // 广播所有与这个服务器建立了连接的客户端广播消息
+        socket.broadcast.emit('broadcastEventServer', 'you are good!');
+    });
 });
 
 

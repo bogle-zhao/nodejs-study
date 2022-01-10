@@ -23,6 +23,12 @@
 
         });
 
+        // 自定义广播事件
+        socket.emit('broadcastEventClient', 'take care');
+
+        socket.on('broadcastEventServer', (message) => {
+            console.log(message);
+        });
 
     </script>
 </head>
