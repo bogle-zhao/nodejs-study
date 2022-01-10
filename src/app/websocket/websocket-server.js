@@ -37,6 +37,14 @@ webSocket.on('connection', (socket) => {
     });
 
     socket.send('hello client');
+
+    // 自定义事件:事件名称：serverEvent
+    socket.emit('serverEvent', 'this is server Event');
+
+    //监听客户端的自定义事件
+    socket.on('clientEvent', (data) => {
+        console.log(JSON.stringify(data));
+    });
 });
 
 
