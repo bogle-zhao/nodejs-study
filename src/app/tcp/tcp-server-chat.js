@@ -10,7 +10,7 @@ const server = net.createServer((socket) => {
         const writeSize = socket.bytesWritten;
 
         console.log(message);
-        console.log('message size is: ' + writeSize);
+        console.log('write message size is: ' + writeSize);
     });
 
     // data：接受到客户端的数据后，触发data事件
@@ -18,7 +18,7 @@ const server = net.createServer((socket) => {
         console.log(data.toString());
         // 读取到创建到现在的总的字节数
         let bytesRead = socket.bytesRead;
-        console.log('data size is :' + bytesRead);
+        console.log('data from client size is :' + bytesRead);
     });
 });
 
