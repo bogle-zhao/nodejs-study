@@ -1,0 +1,16 @@
+$ npm i @koa/router         路由处理
+
+$ npm i koa-bodyparser  处理post，put等body请求体处理
+
+$ npm i koa-static  静态文件处理
+
+$ npm i koa-compress    请求压缩处理
+
+$ npm i koa-combine-routers  将多个模块的路由合并到一起，组合路由
+
+$ npm view axios    http 请求其他服务 类似feign请求
+
+$ npm i jsonfile    json 文件 解析
+
+
+
