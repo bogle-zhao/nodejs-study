@@ -1,0 +1,13 @@
+1. 在package.json文件的scripts节点添加node命令，key是命令的名称，value是运行的命令指令
+2. 通过npm run 命令名称执行命令，比如：npm run koaServer
+
+示例：
+1.package.json
+{
+    ...
+    "scripts": {
+        "koaServer": "node src/app/project/scripts/server"
+      },
+    ...
+}
+2. 运行命令：npm run koaServer

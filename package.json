@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "koaServer": "node src/app/project/scripts/server"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
     "@koa/router": "^10.1.1",
     "axios": "^0.24.0",
     "ioredis": "^4.28.2",
+    "jsonfile": "^6.1.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-combine-routers": "^4.0.2",
@@ -20,6 +21,7 @@
     "koa-static": "^5.0.0",
     "mongoose": "^6.1.5",
     "mysql": "^2.18.1",
+    "qs": "^6.10.3",
     "socket.io": "^2.3.0",
     "uuid": "^8.3.2"
   }
