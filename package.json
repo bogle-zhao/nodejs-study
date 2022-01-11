@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ioredis": "^4.28.2",
+    "koa": "^2.13.4",
     "mongoose": "^6.1.5",
     "mysql": "^2.18.1",
     "socket.io": "^2.3.0",
